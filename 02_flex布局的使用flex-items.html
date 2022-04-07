@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            /* 开启flex布局 */
+            /* 块级 */
+            /* display: flex; */
+            /* 行内 */
+            /* display: inline-flex; */
+
+            width: 400px;
+            height: 400px;
+            background-color: red;
+            margin: 0 auto;
+
+            /* 开启flex */
+            display: flex;
+            /* align-items: center; */
+        }
+
+        .item {
+            width: 100px;
+            height: 100px;
+            color: white;
+            text-align: center;
+        }
+
+        .item1 {
+            background-color: yellow;
+            /* height: 100px; */
+            /* 排序权重 */
+            /* order: 2; */
+
+            /* 单独决定自己的align-item 值与align-item一样 */
+            /* align-self: flex-end; */
+
+            /* 分剩余空间 >1按比例分 <1只分一部分  */
+            /* flex-grow: .2; */
+
+            /* 收缩 >1按比例 <1收缩一部分*/
+            /* flex-shrink: 2; */
+
+            /* 设置主轴上的宽度 */
+            /* flex-basis: 200px; */
+
+            /* flex：flex-grow || flex-shrink || flex-basis的缩写 */
+        }
+
+        .item2 {
+            background-color: green;
+            /* height: 150px; */
+            /* order: 1; */
+            /* flex-grow: .2; */
+            /* flex-shrink: 2; */
+
+        }
+
+        .item3 {
+            background-color: blue;
+            /* height: 120px; */
+            /* order: 3; */
+            /* flex-grow: .1; */
+            /* flex-shrink: 1; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="item item1">item1</div>
+        <div class="item item2">item2</div>
+        <div class="item item3">item3</div>
+    </div>
+    <strong>strong</strong>
+</body>
+
+</html>
